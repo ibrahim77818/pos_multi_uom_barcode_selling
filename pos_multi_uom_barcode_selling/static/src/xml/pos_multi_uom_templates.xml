@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="pos_multi_uom_barcode_selling.MubChangeUomButton">
+        <div class="control-button o_mub_change_uom_button btn btn-light rounded-0 fw-bolder" t-on-click="() => this.click()">
+            <i class="fa fa-balance-scale me-1" role="img" aria-label="Change UoM" title="Change UoM"/>
+            <span>Change UoM</span>
+        </div>
+    </t>
+
+    <!-- Same component renders the order lines on screen and on the receipt. -->
+    <t t-name="pos_multi_uom_barcode_selling.Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension">
+        <xpath expr="//span[@t-esc='line.productName']" position="after">
+            <t t-if="line.mubUomName"><t t-esc="' '"/><span class="o_mub_uom_badge" t-esc="line.mubUomName"/></t>
+        </xpath>
+    </t>
+
+</templates>
