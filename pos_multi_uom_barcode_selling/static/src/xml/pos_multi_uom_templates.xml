@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="MubChangeUomButton" owl="1">
+        <div class="control-button o_mub_change_uom_button">
+            <i class="fa fa-balance-scale" role="img" aria-label="Change UoM" title="Change UoM"/>
+            <span> </span>
+            <span>Change UoM</span>
+        </div>
+    </t>
+
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+        <xpath expr="//span[@class='product-name']" position="inside">
+            <t t-if="props.line.mub_uom_id">
+                <span class="o_mub_uom_badge" t-esc="props.line.get_unit().name"/>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

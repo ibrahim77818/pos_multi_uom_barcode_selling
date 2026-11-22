@@ -1,0 +1,16 @@
+.pos .orderline .o_mub_uom_badge {
+    display: inline-block;
+    margin-inline-start: 6px;
+    padding: 0 7px;
+    border-radius: 10px;
+    background: #e7f0fd;
+    color: #1d4ed8;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+.pos .orderline.selected .o_mub_uom_badge {
+    background: #1d4ed8;
+    color: #ffffff;
+}

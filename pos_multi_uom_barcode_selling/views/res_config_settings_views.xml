@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_pos_multi_uom" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pos.multi.uom</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='point_of_sale']" position="inside">
+                <h2>Multi-UoM Barcode Selling</h2>
+                <div class="row mt16 o_settings_container" id="pos_multi_uom_barcode_selling_section">
+                    <div class="col-12 col-lg-6 o_setting_box" id="pos_multi_uom_barcode_selling_setting">
+                        <div class="o_setting_left_pane">
+                            <field name="pos_multi_uom_barcode_selling"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="pos_multi_uom_barcode_selling"/>
+                            <div class="text-muted">Sell products in secondary units of measure by scanning their UoM barcodes, and switch the unit of an order line from the POS. Reload open POS sessions after changing this option.</div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
