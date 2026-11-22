@@ -1,0 +1,7 @@
+from . import pos_config
+from . import res_config_settings
+from . import product_uom_barcode
+from . import product
+from . import pos_session
+from . import pos_order
+from . import stock_picking

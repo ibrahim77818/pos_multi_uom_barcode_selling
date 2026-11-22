@@ -1,0 +1,355 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_multi_uom_barcode_selling
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 12:00+0000\n"
+"PO-Revision-Date: 2026-11-21 12:00+0000\n"
+"Last-Translator: Ibrahim Yahia\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "%s has no secondary unit of measure with a UoM barcode."
+msgstr "لا توجد للمنتج %s وحدة قياس ثانوية لها باركود وحدة قياس."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "A UoM barcode cannot be empty."
+msgstr "لا يمكن أن يكون باركود وحدة القياس فارغًا."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_pos_config__multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_res_config_settings__pos_multi_uom_barcode_selling
+msgid "Allow cashiers of this point of sale to sell products in secondary units of measure, by scanning the UoM barcodes defined on the products or by changing the unit of an order line."
+msgstr "السماح لأمناء الصندوق في نقطة البيع هذه ببيع المنتجات بوحدات قياس ثانوية، عن طريق مسح باركود وحدات القياس المعرّف على المنتجات أو بتغيير وحدة سطر الطلب."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__barcode
+msgid "Barcode"
+msgstr "الباركود"
+
+#. module: pos_multi_uom_barcode_selling
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_template_form_view_pos_uom_barcodes
+msgid "Barcodes that sell this product in a secondary unit of measure in the Point of Sale (for example KG or Ton when the main unit is Grams). The main unit of measure is sold with the product barcode and cannot be used here."
+msgstr "الباركودات التي تبيع هذا المنتج بوحدة قياس ثانوية في نقطة البيع (مثل الكيلوجرام أو الطن عندما تكون الوحدة الرئيسية هي الجرام). وحدة القياس الرئيسية تُباع بباركود المنتج ولا يمكن استخدامها هنا."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_product_template__uom_barcode_ids
+msgid "Barcodes that sell this product in a secondary unit of measure in the Point of Sale."
+msgstr "الباركودات التي تبيع هذا المنتج بوحدة قياس ثانوية في نقطة البيع."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "Change Unit of Measure"
+msgstr "تغيير وحدة القياس"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/xml/pos_multi_uom_templates.xml:0
+msgid "Change UoM"
+msgstr "تغيير وحدة القياس"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_res_config_settings
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "current"
+msgstr "الحالية"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: pos_multi_uom_barcode_selling
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_uom_barcode_view_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_product_uom_barcode__qty_in_main_uom
+msgid "How many main units one unit of this UoM represents."
+msgstr "عدد الوحدات الرئيسية التي تمثلها وحدة واحدة من وحدة القياس هذه."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_product_uom
+msgid "Link between products and their UoMs"
+msgstr "الربط بين المنتجات ووحدات قياسها"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "main unit"
+msgstr "الوحدة الرئيسية"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__product_uom_id
+msgid "Main Unit of Measure"
+msgstr "وحدة القياس الرئيسية"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_pos_config__multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_res_config_settings__pos_multi_uom_barcode_selling
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.res_config_settings_view_form_pos_multi_uom
+msgid "Multi-UoM Barcode Selling"
+msgstr "البيع بباركود وحدات القياس المتعددة"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "No order line selected"
+msgstr "لم يتم تحديد سطر طلب"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "No secondary units of measure"
+msgstr "لا توجد وحدات قياس ثانوية"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "Please select the product variant sold with the UoM barcode \"%(barcode)s\"."
+msgstr "يرجى اختيار متغير المنتج الذي يُباع بباركود وحدة القياس \"%(barcode)s\"."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "تهيئة نقطة البيع"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "سطور طلبات نقطة البيع"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_pos_session
+msgid "Point of Sale Session"
+msgstr "جلسة نقطة البيع"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_product_template
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__product_tmpl_id
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_pos_order_line__product_uom_id
+msgid "Product UoM"
+msgstr "وحدة قياس المنتج"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_product_uom_barcode
+msgid "Product UoM Barcode"
+msgstr "باركود وحدة قياس المنتج"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.rule,name:pos_multi_uom_barcode_selling.product_uom_barcode_company_rule
+msgid "Product UoM Barcode: multi-company"
+msgstr "باركود وحدة قياس المنتج: الشركات المتعددة"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_product_product
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__product_id
+msgid "Product Variant"
+msgstr "متغير المنتج"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__qty_in_main_uom
+msgid "Quantity in Main UoM"
+msgstr "الكمية بالوحدة الرئيسية"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "Reward lines and refund lines keep the unit of measure they were created with."
+msgstr "تحتفظ سطور المكافآت وسطور الاسترجاع بوحدة القياس التي أُنشئت بها."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_product_uom_barcode__lst_price_uom
+msgid "Sales price of one unit of this UoM, converted from the product sales price (before pricelists and taxes)."
+msgstr "سعر بيع وحدة واحدة من وحدة القياس هذه، محوّلًا من سعر بيع المنتج (قبل قوائم الأسعار والضرائب)."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__lst_price_uom
+msgid "Sales Price per UoM"
+msgstr "سعر البيع لكل وحدة قياس"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_product_uom_barcode__uom_id
+msgid "Secondary unit of measure sold when this barcode is scanned in the Point of Sale. It must share a reference unit with the main unit and cannot be the main unit itself."
+msgstr "وحدة القياس الثانوية التي تُباع عند مسح هذا الباركود في نقطة البيع. يجب أن تشترك في وحدة مرجعية مع الوحدة الرئيسية ولا يمكن أن تكون الوحدة الرئيسية نفسها."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "Select an order line first, then use Change UoM."
+msgstr "حدد سطر طلب أولًا، ثم استخدم تغيير وحدة القياس."
+
+#. module: pos_multi_uom_barcode_selling
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.res_config_settings_view_form_pos_multi_uom
+msgid "Sell products in secondary units of measure by scanning their UoM barcodes, and switch the unit of an order line from the POS. Reload open POS sessions after changing this option."
+msgstr "بيع المنتجات بوحدات قياس ثانوية عن طريق مسح باركود وحدات القياس الخاص بها، وتغيير وحدة سطر الطلب من نقطة البيع. أعد تحميل جلسات نقطة البيع المفتوحة بعد تغيير هذا الخيار."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "The barcode \"%(barcode)s\" is already a unit barcode (packaging) of the product %(product)s."
+msgstr "الباركود \"%(barcode)s\" مستخدم بالفعل كباركود وحدة (تعبئة) للمنتج %(product)s."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product.py:0
+#, python-format
+msgid "The barcode \"%(barcode)s\" is already a UoM barcode of the product %(product)s (%(uom)s)."
+msgstr "الباركود \"%(barcode)s\" مستخدم بالفعل كباركود وحدة قياس للمنتج %(product)s (%(uom)s)."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "The barcode \"%(barcode)s\" is already the main barcode of the product %(product)s."
+msgstr "الباركود \"%(barcode)s\" هو بالفعل الباركود الرئيسي للمنتج %(product)s."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/pos_order.py:0
+#, python-format
+msgid "The unit of measure %(uom)s of the order line %(product)s cannot be converted to the product unit of measure (%(main_uom)s)."
+msgstr "لا يمكن تحويل وحدة القياس %(uom)s في سطر الطلب %(product)s إلى وحدة قياس المنتج (%(main_uom)s)."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "The unit of measure %(uom)s of the UoM barcode \"%(barcode)s\" cannot be converted to the main unit of measure of %(product)s (%(main_uom)s): they have no common reference unit."
+msgstr "لا يمكن تحويل وحدة القياس %(uom)s لباركود وحدة القياس \"%(barcode)s\" إلى وحدة القياس الرئيسية للمنتج %(product)s (%(main_uom)s): لا توجد بينهما وحدة مرجعية مشتركة."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "The UoM barcode \"%(barcode)s\" cannot use %(uom)s because it is the main unit of measure of %(product)s. The main unit is sold with the product barcode."
+msgstr "لا يمكن لباركود وحدة القياس \"%(barcode)s\" استخدام %(uom)s لأنها وحدة القياس الرئيسية للمنتج %(product)s. الوحدة الرئيسية تُباع بباركود المنتج."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "The variant of the UoM barcode \"%(barcode)s\" must belong to the product %(product)s."
+msgstr "يجب أن ينتمي متغير باركود وحدة القياس \"%(barcode)s\" إلى المنتج %(product)s."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model,name:pos_multi_uom_barcode_selling.model_stock_picking
+msgid "Transfer"
+msgstr "الشحنة"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_uom_barcode__uom_id
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_uom_barcode_view_search
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-javascript
+#: code:addons/pos_multi_uom_barcode_selling/static/src/js/control_buttons.js:0
+#, python-format
+msgid "Unit of measure cannot be changed"
+msgstr "لا يمكن تغيير وحدة القياس"
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_template__uom_barcode_ids
+#: model:ir.model.fields,field_description:pos_multi_uom_barcode_selling.field_product_product__uom_barcode_ids
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_template_form_view_pos_uom_barcodes
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_uom_barcode_view_tree
+#: model_terms:ir.ui.view,arch_db:pos_multi_uom_barcode_selling.product_uom_barcode_view_search
+#: model:ir.actions.act_window,name:pos_multi_uom_barcode_selling.action_product_uom_barcode
+#: model:ir.ui.menu,name:pos_multi_uom_barcode_selling.menu_product_uom_barcode
+msgid "UoM Barcodes"
+msgstr "باركود وحدات القياس"
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "UoM barcodes can only be added to products available in the Point of Sale. Enable \"Available in POS\" on %(product)s first."
+msgstr "لا يمكن إضافة باركود وحدات القياس إلا للمنتجات المتاحة في نقطة البيع. فعّل خيار \"متاح في نقطة البيع\" للمنتج %(product)s أولًا."
+
+#. module: pos_multi_uom_barcode_selling
+#. odoo-python
+#: code:addons/pos_multi_uom_barcode_selling/models/product_uom_barcode.py:0
+#, python-format
+msgid "UoM barcodes cannot be used on %(product)s because it is tracked by serial number: each serial number is exactly one main unit."
+msgstr "لا يمكن استخدام باركود وحدات القياس للمنتج %(product)s لأنه متتبَّع بالرقم التسلسلي: كل رقم تسلسلي يساوي وحدة رئيسية واحدة تمامًا."
+
+#. module: pos_multi_uom_barcode_selling
+#: model:ir.model.fields,help:pos_multi_uom_barcode_selling.field_product_uom_barcode__product_id
+msgid "Variant sold with this barcode. Filled automatically when the product has a single variant."
+msgstr "المتغير الذي يُباع بهذا الباركود. يُعبّأ تلقائيًا عندما يكون للمنتج متغير واحد فقط."

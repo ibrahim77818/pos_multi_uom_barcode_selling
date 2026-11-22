@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_uom_barcode_user,product.uom.barcode user,model_product_uom_barcode,base.group_user,1,0,0,0
+access_product_uom_barcode_pos_user,product.uom.barcode pos user,model_product_uom_barcode,point_of_sale.group_pos_user,1,0,0,0
+access_product_uom_barcode_pos_manager,product.uom.barcode pos manager,model_product_uom_barcode,point_of_sale.group_pos_manager,1,1,1,1
+access_product_uom_barcode_stock_manager,product.uom.barcode stock manager,model_product_uom_barcode,stock.group_stock_manager,1,1,1,1
