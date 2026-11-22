@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view_pos_uom_barcodes" model="ir.ui.view">
+        <field name="name">product.template.form.pos.uom.barcodes</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="UoM Barcodes" name="pos_uom_barcodes" invisible="not available_in_pos">
+                    <field name="product_variant_count" invisible="1"/>
+                    <div class="text-muted mb-2">Barcodes that sell this product in a secondary unit of measure in the Point of Sale (for example KG or Ton when the main unit is Grams). The main unit of measure is sold with the product barcode and cannot be used here.</div>
+                    <field name="uom_barcode_ids" context="{'default_product_tmpl_id': id}">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="product_tmpl_id" invisible="1"/>
+                            <field name="product_uom_id" invisible="1"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="product_id" options="{'no_create': True}"
+                                   column_invisible="parent.product_variant_count &lt;= 1"/>
+                            <field name="uom_id" options="{'no_create': True}"/>
+                            <field name="barcode"/>
+                            <field name="qty_in_main_uom"/>
+                            <field name="lst_price_uom"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_uom_barcode_view_tree" model="ir.ui.view">
+        <field name="name">product.uom.barcode.tree</field>
+        <field name="model">product.uom.barcode</field>
+        <field name="arch" type="xml">
+            <list string="UoM Barcodes" editable="bottom">
+                <field name="product_uom_id" invisible="1"/>
+                <field name="product_tmpl_id" options="{'no_create': True}"
+                       domain="[('available_in_pos', '=', True)]"/>
+                <field name="product_id" options="{'no_create': True}" optional="show"/>
+                <field name="uom_id" options="{'no_create': True}"/>
+                <field name="barcode"/>
+                <field name="qty_in_main_uom"/>
+                <field name="lst_price_uom" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="product_uom_barcode_view_search" model="ir.ui.view">
+        <field name="name">product.uom.barcode.search</field>
+        <field name="model">product.uom.barcode</field>
+        <field name="arch" type="xml">
+            <search string="UoM Barcodes">
+                <field name="barcode"/>
+                <field name="product_tmpl_id"/>
+                <field name="uom_id"/>
+                <group>
+                    <filter string="Unit of Measure" name="group_uom" context="{'group_by': 'uom_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_product_uom_barcode" model="ir.actions.act_window">
+        <field name="name">UoM Barcodes</field>
+        <field name="res_model">product.uom.barcode</field>
+        <field name="view_mode">list</field>
+        <field name="search_view_id" ref="product_uom_barcode_view_search"/>
+    </record>
+
+    <menuitem id="menu_product_uom_barcode"
+              name="UoM Barcodes"
+              parent="point_of_sale.pos_config_menu_catalog"
+              action="action_product_uom_barcode"
+              groups="point_of_sale.group_pos_manager"
+              sequence="30"/>
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id,group_id/id,operation,domain
+access_product_uom_barcode_user,product.uom.barcode user,product.uom.barcode,base.group_user,r,
+access_product_uom_barcode_pos_user,product.uom.barcode pos user,product.uom.barcode,point_of_sale.group_pos_user,r,
+access_product_uom_barcode_pos_manager,product.uom.barcode pos manager,product.uom.barcode,point_of_sale.group_pos_manager,crud,
+access_product_uom_barcode_stock_manager,product.uom.barcode stock manager,product.uom.barcode,stock.group_stock_manager,crud,
+product_uom_barcode_company_rule,Product UoM Barcode: multi-company,product.uom.barcode,,crud,"['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]"
