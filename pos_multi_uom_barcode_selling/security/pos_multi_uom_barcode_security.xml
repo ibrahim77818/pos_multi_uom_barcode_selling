@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_uom_barcode_company_rule" model="ir.rule">
+        <field name="name">Product UoM Barcode: multi-company</field>
+        <field name="model_id" ref="model_product_uom_barcode"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

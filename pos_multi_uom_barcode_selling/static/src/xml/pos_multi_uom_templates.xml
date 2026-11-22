@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- Change UoM in the "Actions" dialog of the product screen. -->
+    <t t-name="pos_multi_uom_barcode_selling.ControlButtons" t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('control-buttons-modal')]" position="inside">
+            <button t-if="mubShowChangeUom" class="o_mub_change_uom_button btn btn-secondary btn-lg py-5" t-on-click="() => this.clickMubChangeUom()">
+                <i class="fa fa-balance-scale me-1" role="img" aria-label="Change UoM" title="Change UoM"/>
+                Change UoM
+            </button>
+        </xpath>
+    </t>
+
+    <!-- Same component renders the order lines on screen and on the receipt. -->
+    <t t-name="pos_multi_uom_barcode_selling.Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension">
+        <xpath expr="//span[@t-esc='line.productName']" position="after">
+            <t t-if="line.mubUomName"><t t-esc="' '"/><span class="o_mub_uom_badge" t-esc="line.mubUomName"/></t>
+        </xpath>
+    </t>
+
+</templates>
